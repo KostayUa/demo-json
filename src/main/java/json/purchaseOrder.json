@@ -1,0 +1,65 @@
+{
+  "company": {
+    "name": "Delivery of future",
+    "address": "Soborna av.32",
+    "cityStZip": "Ir41400",
+    "phone": "(093)439-0011",
+    "fax": "(050)332-8734",
+    "website": "https://delivery.com"
+  },
+  "date": "2024-10-02",
+  "number": 4515,
+  "vendor": {
+    "companyName": "SavBut",
+    "department": "storage",
+    "address": "Soborna av.88",
+    "cityStZip": "Ir41400",
+    "phone": "(050)457-1544",
+    "fax": "(097)335-5593"
+  },
+  "shipTo": {
+    "companyName": "private person",
+    "recipient": "address delivery",
+    "address": "Obolon 32",
+    "cityStZip": "Kv53354",
+    "phone": "(050)009-1492"
+  },
+  "currency": "USD",
+  "productLines": [
+    {
+      "code": 123123,
+      "description": "ProductABC",
+      "quantity": {
+        "value": 50,
+        "unit": "pcs"
+      },
+      "price": 10.0,
+      "total": 500.0
+    },
+    {
+      "code": 456456,
+      "description": "ProductLMNO",
+      "quantity": {
+        "value": 1,
+        "unit": "pcs"
+      },
+      "price": 250.0,
+      "total": 250.0
+    },
+    {
+      "code": 789789,
+      "description": "ProductXYZ",
+      "quantity": {
+        "value": 15,
+        "unit": "doz."
+      },
+      "price": 6.0,
+      "total": 90.0
+    }
+  ],
+  "subtotal": 840.0,
+  "tax": null,
+  "shipping": 0.0,
+  "other": 0.0,
+  "total": 840.0
+}
