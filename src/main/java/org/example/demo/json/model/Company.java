@@ -1,8 +1,11 @@
 package org.example.demo.json.model;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 public class Company {
     private String name;
     private String address;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private String cityStZip;
     private String phone;
     private String fax;
@@ -51,6 +54,7 @@ public class Company {
         this.fax = fax;
     }
 
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     public String getWebsite() {
         return website;
     }
