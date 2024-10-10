@@ -16,6 +16,24 @@ public class PurchaseOrder {
     private Double other;
     private double total;
 
+    @Override
+    public String toString() {
+        return "PurchaseOrder{" +
+                "company=" + company +
+                ", date='" + date + '\'' +
+                ", number=" + number +
+                ", vendor=" + vendor +
+                ", shipTo=" + shipTo +
+                ", currency='" + currency + '\'' +
+                ", productLines=" + productLines +
+                ", subtotal=" + subtotal +
+                ", tax=" + tax +
+                ", shipping=" + shipping +
+                ", other=" + other +
+                ", total=" + total +
+                '}';
+    }
+
     public PurchaseOrder() {
     }
 
