@@ -1,19 +1,20 @@
-package purchase_order;
+package org.example.demo.json;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.example.demo.json.model.PurchaseOrder;
 
-import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 
 public class Main {
     public static void main(String[] args) {
         ObjectMapper mapper = new ObjectMapper();
 
         try {
-            PurchaseOrder order = mapper.readValue(new File("src/main/java/json/purchaseOrder.json"),
-                    PurchaseOrder.class);
+            InputStream input = Main.class.getResourceAsStream("/json/purchaseOrder.json");
+            PurchaseOrder order = mapper.readValue(input, PurchaseOrder.class);
             System.out.println("Successfully read JSON: " + order);
 
         } catch (JsonMappingException e) {

@@ -1,4 +1,4 @@
-package purchase_order;
+package org.example.demo.json.model;
 
 import java.util.List;
 

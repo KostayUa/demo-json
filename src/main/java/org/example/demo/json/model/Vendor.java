@@ -1,13 +1,14 @@
-package purchase_order;
+package org.example.demo.json.model;
 
-public class ShipTo {
+public class Vendor {
     private String companyName;
-    private String recipient;
+    private String department;
     private String address;
     private String cityStZip;
     private String phone;
+    private String fax;
 
-    public ShipTo() {
+    public Vendor() {
     }
 
     public String getCompanyName() {
@@ -18,12 +19,12 @@ public class ShipTo {
         this.companyName = companyName;
     }
 
-    public String getRecipient() {
-        return recipient;
+    public String getDepartment() {
+        return department;
     }
 
-    public void setRecipient(String recipient) {
-        this.recipient = recipient;
+    public void setDepartment(String department) {
+        this.department = department;
     }
 
     public String getAddress() {
@@ -48,5 +49,13 @@ public class ShipTo {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public String getFax() {
+        return fax;
+    }
+
+    public void setFax(String fax) {
+        this.fax = fax;
     }
 }
