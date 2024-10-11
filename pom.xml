@@ -11,8 +11,6 @@
     <url>http://maven.apache.org</url>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <mven.complier.target>17</mven.complier.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jackson.version>2.18.0</jackson.version>
         <junit.version>4.13.2</junit.version>
@@ -38,4 +36,17 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <release>17</release>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
